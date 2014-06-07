@@ -1,0 +1,255 @@
+/*
+ Theme Name:   Fruitful Child
+ Theme URI:    http://productcampprovo.org
+ Description:  ProductCamp Child Theme for Fruitful
+ Author:       Nate Carrier
+ Author URI:   http://natecarrier.com
+ Template:     fruitful
+ Version:      1.0.0
+ Tags:         productcamp
+ Text Domain:  fruitful
+*/
+
+@import url("../fruitful/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+#colophon .site-info {
+  width: 90%;
+  font-size: 13px !important;
+}
+
+.sub-menu li:hover > a {
+    color: #fff !important; /* This blends in, so it needs to be changed. Maybe original color text, but outlined? Or change parent to outline? */
+	/*background-color: #333333 !important;*/
+}
+.sub-menu li.current-menu-item a {
+	color: #fff !important;
+}
+
+.widget-title {
+	font-size: 20px !important;
+	font-weight: 600 !important;
+}
+
+.post-title  a{
+	color: #333333;
+}
+
+/* Adjust post width because date_of_post has been removed */
+@media only screen and (min-width:959px) {
+	.blog_post .post-content {
+		width: 638px !important; /* original value: 584px */
+	}
+	.search .blog_post .post-content {
+		width: 938px !important; /* original value: 884px */
+	}
+	.single-post .sixteen.columns.alpha.omega .blog_post .post-content {
+		width:100% !important; /* original value: 94% */
+	}
+	.blog .blog_post,
+	.category .blog_post,
+	.tag .blog_post,
+	.author .blog_post,
+	.archive .blog_post,
+	.search .blog_post{
+		margin:0 0 20px; /* original value: 55px */
+	}
+	article.accordion{margin:0 0 20px;} /* Fix to do above in agenda */
+	.bio-large {
+		display:inline;
+	}
+	.bio-medium {
+		display:none;
+	}
+	.bio-small {
+		display:none;
+	}
+	.session-leader {
+		display:none;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:959px) {
+	.blog_post .post-content {width:506px !important;} /* original value: 452px */
+	.search .blog_post .post-content {width:746px !important;}  /* original value: 692px */
+	.single-post .sixteen.columns.alpha.omega .blog_post .post-content {width:100%;} /* original value: 92% */
+	article.accordion{margin:0 0 20px;}
+	.bio-large {
+		display:none;
+	}
+	.bio-medium {
+		display:inline;
+	}
+	.bio-small {
+		display:none;
+	}
+	.session-leader {
+		display:none;
+	}
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+	.responsive .select-menu{margin: 16px 0 0 0 !important}
+	article.accordion{margin:0 0 8px;} /* Fix to do above in agenda */
+}
+@media only screen and (max-width:767px) {
+	.blog_post .post-content, .search .blog_post .post-content {width:420px !important;} /* original value: 338px; */
+	.accordion .post-content {width:400px !important;}
+	article.accordion{margin:0 0 8px;}
+	article	{width: 100%;padding: 0;margin:0;}
+	.responsive .select-menu{margin: 16px 0 0 0 !important;}	
+	.bio-large {
+		display:none;
+	}
+	.bio-medium {
+		display:none;
+	}
+	.bio-small {
+		display:inline;
+	}
+	.session-leader {
+		display:none;
+	}
+	/* Make less wide in accordion */
+	.resp-tab-content.resp-tab-content-active {
+		padding: 9px !important;
+	}
+}
+@media only screen and (max-width:479px) {
+	.blog_post .post-content, .search .blog_post .post-content{width: 300px !important;}
+	.accordion .post-content {width:280px !important;}
+/* Reduce bio to session leader only in smallest responsive size */	
+	.entry-info table:first-child tr td:first-child {
+		border-right-style: none !important;
+		white-space: normal;
+		padding: 0 !important;
+	}
+	.session-leader {
+		display:initial;
+	}
+	.session-avatar {
+		display: none;
+	}
+	.session-bio {
+		display: none;
+	}
+	
+}
+
+.blog_post .post-content {
+	padding: 0;
+}
+.post-title {
+	line-height: 32px;
+}
+
+
+table, tbody, tr, td {
+	margin:  0 0 0 0;
+	border-collapse: collapse !important;
+	border: none !important;
+	outline: none !important;
+	font-size: 14px !important;
+	font: inherit !important;	
+}
+
+td {
+	padding: 0 0 0 0 !important;
+}
+
+.entry-info {
+	padding: 0 4.4% 0;
+	clear:both;
+}
+
+.entry-content {
+	padding: 0 4.4% 0 !important;
+}
+
+.entry-truncated {
+	margin:10px 0;
+}
+
+.entry-full {
+	margin:-4px 0;
+}
+
+.session-time, .session-room, .session-leader {
+	font-weight: 600 !important;
+}
+
+.session-bio {
+	font-weight: 200 !important;
+}
+
+.post-header {
+	margin-bottom: 1em;
+}
+
+@media only screen and (min-width:480px) {
+	.entry-info table:first-child tr td:first-child {
+		border-right: 1px solid #d6d6d6 !important;
+		white-space: nowrap;
+		padding-right: 10px !important;
+	}
+}
+
+.session-avatar {
+	vertical-align: bottom;
+	padding: 0 10px !important;
+	width: 40px;
+}
+
+.session-avatar-left {
+	vertical-align: bottom;
+	padding-right: 10px !important;
+}
+
+.session-hide, .entry-hidden {
+	display: none;
+}
+
+.attachments {
+    list-style-type: none;
+    margin: 0 !important;
+}
+
+.entry-attachments {
+	padding: 0px 4.4% 20px;
+}
+
+#nav-below {
+	display: none;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+/* Remove entry-content padding in Full Width No-Padding Page */
+/* A separate page must be used because there is no CSS parent selector, otherwise the padding could be removed using a class in the post */
+.no-entry-content-padding article .entry-content:nth-of-type(1) {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/* Adjustments to tabbed nav */
+.resp-tab-content {
+	overflow-x: auto;
+}
+.resp-tab-item {
+	font-weight: 600;
+}
+.resp-tab-item a {
+	font-size: 14px !important;
+}
+
+/* Add spacing and border to agenda overview table */
+.agenda-overview tr:not(:last-child) td {
+	border-bottom: 1px solid #d6d6d6 !important;
+	padding: 4px 0 !important;
+}
+.agenda-overview tr td:first-child {
+	padding-right: 10px !important;
+	font-weight: 600 !important;
+}
